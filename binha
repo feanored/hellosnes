@@ -1,0 +1,3 @@
+#!/bin/bash
+ca65 --cpu 65816 -o binha.o binha.s
+ld65 -C mem.map binha.o -o binha.smc

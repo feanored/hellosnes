@@ -1,0 +1,3 @@
+#!/bin/bash
+ca65 --cpu 65816 -o steffen.o steffen.s
+ld65 -C mem.map steffen.o -o steffen.smc
